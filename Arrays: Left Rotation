@@ -1,0 +1,16 @@
+# https://www.hackerrank.com/challenges/ctci-array-left-rotation/submissions/code/93944756?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
+
+a= [1,2,3,4,5]
+b =2 # number of rotations to be made
+count =0
+
+for i in a:
+    while count < b:
+        f = a[0]
+        a.remove(f)
+        a.append(f)
+        count =count +1
+print(a)
+print (' '.join(map(str,a))) . # to convert list to string
+
+#https://github.com/abrahamalbert18/HackerRank-Solutions-in-Python/blob/master/Arrays:%20Left%20Rotation
